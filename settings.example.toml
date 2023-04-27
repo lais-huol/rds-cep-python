@@ -1,0 +1,14 @@
+DYNACONF_DEBUG = true
+
+DYNACONF_RDS_CEP_INDEX_NAME = "cep_logradouro"
+
+SEARCH_ENGINES__default__engine = 'opensearchpy.OpenSearch'
+SEARCH_ENGINES__default__dsl_engine = 'opensearch_dsl.connections'
+SEARCH_ENGINES__default__hosts = 'http://localhost:9200'
+SEARCH_ENGINES__default__username = 'username'
+SEARCH_ENGINES__default__password = 'password'
+SEARCH_ENGINES__default__ssl_show_warn = false
+SEARCH_ENGINES__default__verify_certs = false
+SEARCH_ENGINES__default__timeout = 5
+SEARCH_ENGINES__default__starting_retry_interval = 1
+SEARCH_ENGINES__default__starting_max_retries = 60
