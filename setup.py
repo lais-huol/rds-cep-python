@@ -58,4 +58,6 @@ setup(
     ],
     package_dir={"rds_cep": "rds_cep"},
     package_data=package_data_dirs("rds_cep", []),
+    download_url="https://github.com/lais-huol/rds-cep-python/tags",
+    url="https://github.com/lais-huol/rds-cep-python",
 )

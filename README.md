@@ -15,6 +15,8 @@ Crie uma nova branch, clone o código, crie uma venv para desenvolvimento, insta
 ```bash
 mkvirtualenv rds-core
 pip install -r requirements-dev.txt
+pre-commit install
+pre-commit clean
 ```
 
 Caso você deseje alterar o código do rds-core e testar como reflete aqui
@@ -22,7 +24,6 @@ Caso você deseje alterar o código do rds-core e testar como reflete aqui
 ```bash
 # Prepare
 pip install -e ../rds-core
-
 ```
 
 Teste as alterações
