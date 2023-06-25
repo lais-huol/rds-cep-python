@@ -13,7 +13,9 @@ def fast_scandir(dirname):
 def package_data_dirs(root, data_dirs):
     data_dirs_path = [x + "/*" for x in data_dirs]
     for data_dir in data_dirs:
-        data_dirs_path += [x.replace(f"{root}/", "") + "/*" for x in fast_scandir(f"{root}/{data_dir}")]
+        data_dirs_path += [
+            x.replace(f"{root}/", "") + "/*" for x in fast_scandir(f"{root}/{data_dir}")
+        ]
 
     return {root: data_dirs_path}
 
@@ -29,7 +31,7 @@ with open("requirements.txt", "w") as file1:
 
 setup(
     name="rds-cep",
-    version="0.0.1",
+    version="0.0.2",
     description="Framework para serviços do Rede de Dados em Saúde do LAIS",
     long_description="É uma biblioteca pública em Python que condensa um conjunto de boas práticas para o"
     " desenvolvimento das aplicações que compõem a Rede da Dados em Saúde (RDS) RDS do Laboratório de"
@@ -44,6 +46,7 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
         "Programming Language :: Python",
+        "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
