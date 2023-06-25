@@ -54,7 +54,7 @@ setup(
         "Topic :: Internet :: WWW/HTTP :: Indexing/Search",
         "Topic :: Software Development :: Libraries",
     ],
-    python_requires=">=3.9",
+    python_requires=">=3.8",
     install_requires=requirements,
     packages=[
         "rds_cep",
